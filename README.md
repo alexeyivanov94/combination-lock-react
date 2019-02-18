@@ -7,23 +7,28 @@
 ## Install
 
 ```bash
-npm install --save react-combination-lock
+npm install react-combination-lock
 ```
 
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
+import CombinationLock from 'react-combination-lock'
+import 'react-combination-lock/src/index.css'
 
-import MyComponent from 'react-combination-lock'
+const App = () => (
+  <div>
+    <CombinationLock 
+      code='01234' 
+      height={70} 
+      onMatch={() => { console.log('Unlock!') }}
+      openText={'Unlocked!'}
+    />
+  </div>
+);
 
-class Example extends Component {
-  render () {
-    return (
-      <MyComponent />
-    )
-  }
-}
+export default App;
 ```
 
 ## License

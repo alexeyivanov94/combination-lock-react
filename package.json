@@ -4,7 +4,7 @@
   "description": "React Component implement simple draggable combination lock",
   "author": "alexeyivanov94 &lt;alexey.iva94@gmail.com&gt;",
   "license": "MIT",
-  "repository": "alexeyivanov94 &lt;alexey.iva94@gmail.com&gt;/react-combination-lock",
+  "repository": "https://github.com/alexeyivanov94/react-combination-lock",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -57,5 +57,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "react-draggable": "^3.1.1"
+  }
 }

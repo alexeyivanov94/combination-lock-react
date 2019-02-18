@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 
-import ExampleComponent from 'react-combination-lock'
+import CombinationLock from 'react-combination-lock'
+import 'react-combination-lock/src/index.css'
 
 export default class App extends Component {
   render () {
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        <CombinationLock code='01234' height={80} onMatch={() => { console.log('Open!') }} />
       </div>
     )
   }
