@@ -31,6 +31,10 @@ const App = () => (
 export default App;
 ```
 
+## Props
+
+
+
 ## License
 
-MIT © [alexeyivanov94 &lt;alexey.iva94@gmail.com&gt;](https://github.com/alexeyivanov94 &lt;alexey.iva94@gmail.com&gt;)
+MIT © [alexeyivanov94 &lt;alexey.iva94@gmail.com&gt;](https://github.com/alexeyivanov94)
