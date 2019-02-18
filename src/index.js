@@ -112,7 +112,7 @@ class Column extends React.Component {
   }
 
   render() {
-    const { height } = this.props;
+    const { height, mainClass } = this.props;
     const { list, marginTop } = this.state;
     const cellSize = height / 2;
     const itemStyle = {
@@ -131,7 +131,7 @@ class Column extends React.Component {
     }
 
     return (
-      <div className='combination-lock-drag' style={dragStyle}>
+      <div className={`${mainClass}-drag`} style={dragStyle}>
         <DraggableCore
           grid={[cellSize, cellSize / 2]}
           onStart={this.dragStart}
@@ -160,7 +160,8 @@ class CombinationLock extends React.Component {
     code: '01234',
     height: 80,
     onMatch: () => {},
-    openText: ''
+    openText: '',
+    mainClass: 'combination-lock'
   }
 
   checkCode = (number, id) => {
@@ -177,22 +178,30 @@ class CombinationLock extends React.Component {
   }
 
   render() {
-    const { code, onMatch, openText, height, ...props } = this.props;
+    const { code, onMatch, openText, height, mainClass, ...props } = this.props;
     const { opened } = this.state;
 
     return (
-      <div className='combination-lock'>
+      <div className={mainClass}>
         {opened && !!openText &&
           <div
-            className={`combination-lock-open ${opened ? 'combination-lock-open--show' : ''}`}
+            className={`${mainClass} ${opened ? `${mainClass}-open--show` : ''}`}
             style={{position: 'absolute'}}
           >
             {openText}
           </div>
         }
-        <div className='combination-lock-container' style={{ overflow: 'hidden', height: height }}>
+        <div className={`${mainClass}-container`} style={{ overflow: 'hidden', height: height }}>
           { [...code].map((v, i) =>
-            <Column key={i} id={i} {...props} checkMatch={this.checkCode} isOpen={opened} height={height} />
+            <Column
+              key={i}
+              id={i}
+              checkMatch={this.checkCode}
+              isOpen={opened}
+              height={height}
+              mainClass={mainClass}
+              {...props}
+            />
           )}
         </div>
       </div>
@@ -204,14 +213,16 @@ Column.propTypes = {
   height: number,
   checkMatch: func,
   isOpen: bool,
-  id: number
+  id: number,
+  mainClass: string
 }
 
 CombinationLock.propTypes = {
   code: string,
   height: number,
   onMatch: func,
-  openText: string
+  openText: string,
+  mainClass: string
 }
 
 export default CombinationLock;

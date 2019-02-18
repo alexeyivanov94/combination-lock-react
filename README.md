@@ -41,6 +41,7 @@ export default App;
 |`height`|number|`80`|Column height (also response for font size)
 |`openText`|string|`''`|Text to be shown on combination match
 |`onMatch`|function|`() => {}`|Callback function on combination match
+|`mainClass`|string|`combination-lock`|CSS class name of component
 ## License
 
 MIT © [alexeyivanov94 &lt;alexey.iva94@gmail.com&gt;](https://github.com/alexeyivanov94)
