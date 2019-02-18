@@ -11,6 +11,7 @@ export default class App extends Component {
           code='01234'
           height={80}
           onMatch={() => { console.log('Unlock!') }}
+          openText={'Unlocked!'}
         />
       </div>
     )

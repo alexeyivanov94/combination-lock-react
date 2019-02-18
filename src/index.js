@@ -183,9 +183,9 @@ class CombinationLock extends React.Component {
 
     return (
       <div className={mainClass}>
-        {opened && !!openText &&
+        {!!openText &&
           <div
-            className={`${mainClass} ${opened ? `${mainClass}-open--show` : ''}`}
+            className={`${mainClass}-open ${opened ? `${mainClass}-open--show` : ''}`}
             style={{position: 'absolute'}}
           >
             {openText}

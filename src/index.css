@@ -42,7 +42,7 @@
   -ms-user-select: none;
   user-select: none;
 }
-.combination-lock-wrapper {}
+
 .combination-lock-container {
   padding: 0 20px 0 8px;
   border-radius: 7px;
