@@ -1,5 +1,4 @@
-.drag {
-  overflow: hidden;
+.combination-lock-drag {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -14,13 +13,12 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   cursor: move;
 }
-.drag > ul {
+.combination-lock-drag > ul {
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
-.drag > ul > li {
+.combination-lock-drag > ul > li {
   display: block;
   padding: 0 20px;
   line-height: 1.2;

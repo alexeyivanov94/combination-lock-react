@@ -118,17 +118,27 @@ class Column extends React.Component {
     const itemStyle = {
       fontSize: cellSize * 0.8 + 'px',
       height: cellSize + 'px',
+      display: 'block'
     };
+    const dragStyle = {
+      height: height + 'px',
+      display: 'inline-block',
+      overflow: 'hidden'
+    }
+    const listStyle = {
+      marginTop: marginTop + 'px',
+      listStyle: 'none'
+    }
 
     return (
-      <div className='drag' style={{height: height + 'px', display: 'inline-block'}}>
+      <div className='combination-lock-drag' style={dragStyle}>
         <DraggableCore
           grid={[cellSize, cellSize / 2]}
           onStart={this.dragStart}
           onDrag={this.dragAction}
           onStop={this.dragStop}
         >
-          <ul style={{ marginTop: marginTop + 'px', listStyle: 'none' }}>
+          <ul style={listStyle}>
             {list.map((number, index) =>
               <li key={index} style={itemStyle}>{number}</li>
             )}
@@ -180,12 +190,10 @@ class CombinationLock extends React.Component {
             {openText}
           </div>
         }
-        <div className='combination-lock-container' style={{ overflow: 'hidden' }}>
-          <div className='combination-lock-wrapper' style={{ height: height }}>
-            { [...code].map((v, i) =>
-              <Column key={i} id={i} {...props} checkMatch={this.checkCode} isOpen={opened} height={height} />
-            )}
-          </div>
+        <div className='combination-lock-container' style={{ overflow: 'hidden', height: height }}>
+          { [...code].map((v, i) =>
+            <Column key={i} id={i} {...props} checkMatch={this.checkCode} isOpen={opened} height={height} />
+          )}
         </div>
       </div>
     )
