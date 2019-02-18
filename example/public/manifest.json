@@ -1,0 +1,8 @@
+{
+  "short_name": "react-combination-lock",
+  "name": "react-combination-lock",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
