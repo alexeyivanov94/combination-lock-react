@@ -1,7 +1,6 @@
-# react-combination-lock
+# React Combination Lock
 
-> React Component implement simple draggable combination lock
-
+React Component implement simple draggable combination lock
 
 [![NPM](https://img.shields.io/npm/v/react-combination-lock.svg)](https://www.npmjs.com/package/react-combination-lock)
 
