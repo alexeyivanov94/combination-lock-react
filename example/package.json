@@ -1,6 +1,6 @@
 {
-  "name": "react-combination-lock-example",
-  "homepage": "https://alexeyivanov94 &lt;alexey.iva94@gmail.com&gt;.github.io/react-combination-lock",
+  "name": "combination-lock-react-example",
+  "homepage": "https://alexeyivanov94 &lt;alexey.iva94@gmail.com&gt;.github.io/combination-lock-react",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
@@ -9,7 +9,7 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "^1.1.4",
-    "react-combination-lock": "link:.."
+    "combination-lock-react": "link:.."
   },
   "scripts": {
     "start": "react-scripts start",

@@ -2,21 +2,21 @@
 
 React Component implement simple draggable combination lock
 
-[![NPM](https://img.shields.io/npm/v/react-combination-lock.svg)](https://www.npmjs.com/package/react-combination-lock)
+[![NPM](https://img.shields.io/npm/v/combination-lock-react.svg)](https://www.npmjs.com/package/combination-lock-react)
 
 [Demo](https://codepen.io/alexeyivanov94/pen/BMOJyv)
 ## Install
 
 ```bash
-npm install react-combination-lock
+npm install combination-lock-react
 ```
 
 ## Usage
 
 ```jsx
 import React from 'react'
-import CombinationLock from 'react-combination-lock'
-import 'react-combination-lock/dist/index.css'
+import CombinationLock from 'combination-lock-react'
+import 'combination-lock-react/dist/index.css'
 
 const App = () => (
   <div>

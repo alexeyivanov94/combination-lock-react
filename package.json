@@ -1,10 +1,10 @@
 {
-  "name": "react-combination-lock",
+  "name": "combination-lock-react",
   "version": "1.0.0",
   "description": "React Component implement simple draggable combination lock",
   "author": "alexeyivanov94 &lt;alexey.iva94@gmail.com&gt;",
   "license": "MIT",
-  "repository": "https://github.com/alexeyivanov94/react-combination-lock",
+  "repository": "https://github.com/alexeyivanov94/combination-lock-react",
   "keywords": ["react", "lock", "combination", "draggable"],
   "main": "dist/index.js",
   "module": "dist/index.es.js",
