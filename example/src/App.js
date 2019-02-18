@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import CombinationLock from 'react-combination-lock'
-import 'react-combination-lock/src/index.css'
+import 'react-combination-lock/dist/index.css'
 
 export default class App extends Component {
   render () {
