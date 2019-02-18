@@ -179,7 +179,7 @@ class CombinationLock extends React.Component {
   render() {
     const { code, onMatch, openText, height, ...props } = this.props;
     const { opened } = this.state;
-    console.log(openText);
+
     return (
       <div className='combination-lock'>
         {opened && !!openText &&
