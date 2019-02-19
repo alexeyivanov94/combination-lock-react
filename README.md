@@ -4,7 +4,7 @@ React Component implement simple draggable combination lock
 
 [![NPM](https://img.shields.io/npm/v/combination-lock-react.svg)](https://www.npmjs.com/package/combination-lock-react)
 
-[Demo](https://codepen.io/alexeyivanov94/pen/BMOJyv)
+[Demo](https://codesandbox.io/s/0p397kk8pw)
 ## Install
 
 ```bash
