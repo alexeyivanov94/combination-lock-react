@@ -157,7 +157,7 @@ class CombinationLock extends React.Component {
   }
 
   static defaultProps = {
-    code: '01234',
+    combination: '01234',
     height: 80,
     onMatch: () => {},
     openText: '',
@@ -165,8 +165,8 @@ class CombinationLock extends React.Component {
   }
 
   checkCode = (number, id) => {
-    const { code, onMatch } = this.props;
-    const codeNumbers = [...code].map((number) => +number);
+    const { combination, onMatch } = this.props;
+    const codeNumbers = [...combination].map((number) => +number);
     this.setState(state => {
       state.checker[id] = number;
       return {checker: state.checker}
@@ -178,7 +178,7 @@ class CombinationLock extends React.Component {
   }
 
   render() {
-    const { code, onMatch, openText, height, mainClass, ...props } = this.props;
+    const { combination, onMatch, openText, height, mainClass, ...props } = this.props;
     const { opened } = this.state;
 
     return (
@@ -191,8 +191,8 @@ class CombinationLock extends React.Component {
             {openText}
           </div>
         }
-        <div className={`${mainClass}-container`} style={{ overflow: 'hidden', height: height }}>
-          { [...code].map((v, i) =>
+        <div className={`${mainClass}-container`} style={{ overflow: 'hidden', height: height, whiteSpace: 'nowrap' }}>
+          { [...combination].map((v, i) =>
             <Column
               key={i}
               id={i}
@@ -218,7 +218,7 @@ Column.propTypes = {
 }
 
 CombinationLock.propTypes = {
-  code: string,
+  combination: string,
   height: number,
   onMatch: func,
   openText: string,

@@ -1,6 +1,6 @@
 {
   "name": "combination-lock-react",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React Component implement simple draggable combination lock",
   "author": "alexeyivanov94 &lt;alexey.iva94@gmail.com&gt;",
   "license": "MIT",

@@ -8,7 +8,7 @@ export default class App extends Component {
     return (
       <div>
         <CombinationLock
-          code='01234'
+          combination='01234'
           height={80}
           onMatch={() => { console.log('Unlock!') }}
           openText={'Unlocked!'}
