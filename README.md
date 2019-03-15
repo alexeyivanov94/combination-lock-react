@@ -36,7 +36,7 @@ export default App;
 
 |Props|Type|Default|Description|
 |---|:---:|---|---|
-|`code`|string|`'01234'`|Correct combination (also response for the number of columns)
+|`combination`|string|`'01234'`|Correct combination (also response for the number of columns)
 |`height`|number|`80`|Column height (also response for font size)
 |`openText`|string|`''`|Text to be shown on combination match
 |`onMatch`|function|`() => {}`|Callback function on combination match
